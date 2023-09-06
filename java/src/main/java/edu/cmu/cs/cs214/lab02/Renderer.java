@@ -2,15 +2,25 @@ package edu.cmu.cs.cs214.lab02;
 
 import edu.cmu.cs.cs214.lab02.shapes.*;
 
-public class Renderer {
-    public Rectangle rectangle;
+public class Renderer{
+    // public Rectangle rectangle;
+
     
-    Renderer(Rectangle rectangle) {
-        this.rectangle = rectangle;
+    
+    // Renderer(Rectangle rectangle) {
+    //     this.rectangle = rectangle;
+    // }
+
+    public Shape s;
+
+    Renderer(Shape s){
+        this.s = s;
     }
 
+
     void draw() {
-        double area = rectangle.getArea();
+
+        double area = s.getArea();
 
         // assume implementation
 
